@@ -38,13 +38,8 @@ function handleBackdropElemClick(e) {
 }
 
 function handleBackdropElemEscapeClick(e) {
-  if (activeModal === null) {
-    console.log('null');
-    return;
-  }
-
-  if (e.code === 'Escape') {
-    console.log('escape');
+  if (e.code === 'Escape' && activeModal !== null) {
+    console.log('Escape pressed');
     closeModal();
   }
 }
