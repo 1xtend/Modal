@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    * action - куди відправляємо форму
+    * method - 
+    * name - ім'я даних
+    * type="button" - не сабмітить форму
+    * type="reset" - очищує всі інпути форми
+    -->
+    <form id="form">
+      <input type="text" name="username" placeholder="Username" id="username" />
+      <input type="email" name="email" placeholder="email" required />
+
+      <div>
+        <div>
+          <label for="firepowerCheckBox">Firepower</label>
+          <input type="checkbox" name="abilities" value="Firepower" id="firepowerCheckBox" />
+        </div>
+        <div>
+          <label for="waterpowerCheckBox">Waterpower</label>
+          <input type="checkbox" name="abilities" value="Waterpower" id="waterpowerCheckBox" />
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script src="scripts/form-events.js"></script>
+  </body>
+</html>
