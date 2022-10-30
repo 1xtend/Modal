@@ -54,5 +54,6 @@ modalButtons.forEach((modalButton) => {
 
   closeBtn.addEventListener('click', handleCloseModalButtonClick); // обробляє клік по кнопці закриття
   modal.addEventListener('click', handleBackdropElemClick); // обробляє клік на backdrop
-  window.addEventListener('keydown', handleBackdropElemEscapeClick);
 });
+
+window.addEventListener('keydown', handleBackdropElemEscapeClick);
